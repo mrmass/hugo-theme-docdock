@@ -45,6 +45,10 @@
       </center>
     </div>
 
+    <div class="chevrons">
+      {{ partial "next-prev-page.html" . }}
+    </div>
+
     {{- if not .Site.Params.disableSearch}}
       <div>
         <div class="searchbox">
@@ -63,6 +67,5 @@
         <script type="text/javascript" src="{{"js/search.js" | relURL}}"></script>
       </div>
     {{- end}}
-
 
     {{if not .IsHome}}<h1>{{.Title}}</h1>{{end}}
